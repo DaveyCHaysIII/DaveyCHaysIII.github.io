@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<title>Davey Hays Personal Website</title>
+</head>
+<body>
+	<div class="header">
+		<div class="banner">
+			<img src="images/headshot.JPG" alt="">
+			<p>Davey Hays, Software Engineer</p>
+		</div>
+			<div class="buttons">
+				<!-- GitHub Button -->
+				<a href="https://github.com/DaveyCHaysIII" class="social-button github" target="_blank"><i class="fab fa-github"></i></a>
+				<!-- LinkedIn Button -->
+				<a href="https://www.linkedin.com/in/daveyhaysiii" class="social-button linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>	
+		</div>		
+	<div class="content">
+		<div class="selection">
+			<div class="select">
+				<p class="button", data-target="about" onclick="toggleClass(this)">About</p>
+			</div>
+			<div class="select">
+				<p class="button", data-target="portfolio" onclick="toggleClass(this)">Portfolio</p>
+			</div>
+			<div class="select">
+				<p class="button", data-target="resume" onclick="toggleClass(this)">Resume</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-inner">
+				<div id="about" class="card-inner-block about-card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque ad quaerat sunt quod esse, voluptatum, molestias minus suscipit culpa quam eos quis vero inventore eum. Asperiores earum eos, qui tenetur dolorum dicta corrupti velit id facere hic aspernatur doloribus aperiam excepturi voluptas iure quidem, placeat quam deserunt. Veritatis ex ducimus corporis, quos voluptas voluptate aliquam et cupiditate facere illo accusantium non modi alias voluptatum nostrum quaerat deleniti, tempora sequi iste blanditiis deserunt totam. Atque magni nihil aspernatur quasi ea porro quis et modi quibusdam laudantium similique reprehenderit eos vitae perspiciatis unde dolorem sapiente dolor, veritatis totam iusto architecto ipsum adipisci recusandae? Non quod velit ea sapiente quaerat vel voluptate earum assumenda perferendis eaque tempora aperiam magnam voluptatibus beatae error in cupiditate fugiat veniam odit aspernatur, maxime sequi ullam. Eum, earum consequuntur porro repellendus beatae cupiditate alias incidunt eaque culpa ipsa. Dicta, doloremque saepe, voluptatibus voluptatem praesentium tempora quaerat reprehenderit facilis provident, magni et sint maiores odit delectus dolor quis aliquam architecto inventore? Adipisci error sequi ad fugit. Magnam mollitia sit et sed sunt recusandae eaque cumque totam nobis dolore, fugit odio debitis maxime, iure ratione dolor. Voluptatibus tempore saepe dolorum mollitia laborum nemo? Alias ipsam quam suscipit. Perferendis, voluptates?</p>
+				</div>
+				<div id="portfolio" class="card-inner-block portfolio-card">
+					<p>This is my portfolio</p>
+				</div>
+				<div id="resume" class="card-inner-block resume-card">
+					<p>This is my resume</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>

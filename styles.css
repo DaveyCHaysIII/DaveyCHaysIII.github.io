@@ -1,0 +1,152 @@
+:root {
+    --color-background: peachpuff;
+    --text-color: rgb(146, 27, 146);
+    --font-family-base: "IBM plex mono", monospace;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--text-color);
+	font-family: var(--font-family-base);
+	font-weight: 100;
+	font-style: normal;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(170deg, var(--text-color), var(--color-background));
+}
+
+.banner {
+	flex: 3;
+	padding: none;
+	/*background-color: var(--text-color);*/
+	color: var(--color-background);
+	font-size: 2rem;
+	font-weight: 300;
+	font-style: italic;
+	align-items: center;
+	overflow: hidden;
+	display: flex;
+}
+
+.banner p {
+	padding-left: 5vw;
+	margin: 0;
+}
+
+.banner img {
+	width: auto;
+	height: 120%;
+	object-position: center;
+}
+
+.buttons {
+	flex: 1;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-button {
+    display: inline-flex; /* Align icon and text */
+	justify-content: center;
+    align-items: center; /* Centers the icon and text vertically */
+    cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+    padding: 10px; /* Adds some padding to make it look like a button */
+    color: white; /* White text */
+    text-decoration: none; /* Removes the underline from the link */
+    border: none; /* No border by default */
+    border-radius: 50%; /* Rounded corners */
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	margin: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.social-button i {
+    font-size: 1.7em; /* Adjust icon size */
+}
+
+.github {
+    background-color: var(--text-color);
+}
+
+.linkedin {
+    background-color: var(--text-color);
+}
+
+.social-button:hover {
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+.github:hover {
+    background-color: #444; /* Darker shade for GitHub button on hover */
+}
+
+.linkedin:hover {
+    background-color: #005c8e; /* Darker shade for LinkedIn button on hover */
+}
+
+.content {
+	display: flex;
+	height: 80%;
+}
+
+.selection {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.select {
+	padding: 10;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.select p {
+	font-size: 1.5rem;
+	
+}
+
+.select p:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.active {
+	padding: 5px 20px;
+	border: 1px dotted var(--text-color);
+	border-radius: 8px;
+}
+
+.card {
+	flex: 3;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-inner {
+	margin: 30px;
+	height: 100%;
+	padding: 50px;
+}
+
+.card-inner-block {
+	display: none;
+	height: 80%;
+	padding: 50px;
+	background-color: blanchedalmond;
+}
