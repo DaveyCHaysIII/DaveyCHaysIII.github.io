@@ -61,7 +61,7 @@ body {
     align-items: center; /* Centers the icon and text vertically */
     cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
     padding: 10px; /* Adds some padding to make it look like a button */
-    color: white; /* White text */
+    color: var(--color-background); /* White text */
     text-decoration: none; /* Removes the underline from the link */
     border: none; /* No border by default */
     border-radius: 50%; /* Rounded corners */
@@ -69,7 +69,7 @@ body {
 	height: 20px;
 	text-align: center;
 	margin: 5px;
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
 }
 
 .social-button i {
@@ -84,16 +84,28 @@ body {
     background-color: var(--text-color);
 }
 
+.download {
+	background-color: var(--text-color);
+	font-size: 0.85em;
+}
+
 .social-button:hover {
     transform: scale(1.1); /* Slightly enlarges the button on hover */
 }
 
 .github:hover {
     background-color: #444; /* Darker shade for GitHub button on hover */
+	color: white;
 }
 
 .linkedin:hover {
     background-color: #005c8e; /* Darker shade for LinkedIn button on hover */
+	color: white;
+}
+
+.download:hover {
+	background-color: red;
+	color: white;
 }
 
 .content {
@@ -148,5 +160,6 @@ body {
 	display: none;
 	height: 80%;
 	padding: 50px;
+	overflow: scroll;
 	background-color: blanchedalmond;
 }
