@@ -144,22 +144,49 @@ body {
 	border-radius: 8px;
 }
 
-.card {
+.card-outer {
+	display: flex;
 	flex: 3;
 	align-items: center;
 	justify-content: center;
-}
-
-.card-inner {
-	margin: 30px;
-	height: 100%;
-	padding: 50px;
+	padding: 10px;
 }
 
 .card-inner-block {
 	display: none;
 	height: 80%;
+	width: 100%;
 	padding: 50px;
 	overflow: scroll;
+	align-items: center;
+	justify-content: center;
 	background-color: blanchedalmond;
 }
+
+.card-inner {
+	display: block;
+	padding: 50px;
+	height: 100%; 
+	width: 100%;
+}
+
+.card-inner img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.card-inner button {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.arrow {
+	background: none;
+	border: none;
+	font-size: 24;
+	cursor: pointer;
+	padding: 14px;
+	color: var(--text-color);
+}
+

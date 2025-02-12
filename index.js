@@ -12,5 +12,5 @@ function toggleClass(clickedButton) {
 
     // Find the target card and display it
     const targetCard = clickedButton.getAttribute("data-target");
-    document.getElementById(targetCard).style.display = "block";
+    document.getElementById(targetCard).style.display = "inline-flex";
 }
