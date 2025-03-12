@@ -42,8 +42,7 @@ body {
 }
 
 .banner img {
-	width: auto;
-	height: 120%;
+	max-width: 120px;
 	object-position: center;
 }
 
@@ -130,7 +129,7 @@ body {
 
 .select p {
 	font-size: 1.5rem;
-	
+
 }
 
 .select p:hover {
@@ -166,13 +165,12 @@ body {
 .card-inner {
 	display: block;
 	padding: 50px;
-	height: 100%; 
+	height: 100%;
 	width: 100%;
 }
 
 .card-inner img {
 	display: block;
-	height: 100%;
 	width: 100%;
 }
 .card-inner button {
@@ -190,3 +188,14 @@ body {
 	color: var(--text-color);
 }
 
+@media screen and (width < 720px) {
+
+	.header {
+		flex-direction: column;
+	}
+
+	.banner {
+		flex-direction: column;
+	}
+
+}
