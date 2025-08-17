@@ -168,9 +168,21 @@ body {
 	width: 100%;
 }
 
-.card-inner img {
-	display: block;
-	width: 100%;
+.about-container {
+	display: flex;
+	border-style: double;
+	padding: 10px;
+}
+
+.about-image {
+	display: inline-block;
+	height: 300px;
+	margin-top: 20px;
+}
+
+.about-text {
+	display: inline-block;
+	margin-left: 20px;
 }
 .card-inner button {
 	display: flex;
@@ -178,10 +190,18 @@ body {
 	margin-right: auto;
 }
 
+.portfolio-box {
+	border-style: double;
+	padding: 15px;
+	margin-bottom: 5px;
+}
+
 .portfolio-image {
 	display: block;
+	margin: 0 auto;
 	height: 300px;
 }
+
 
 .arrow {
 	background: none;
